@@ -14,7 +14,7 @@ def calcular_troco(total_compra, valor_pago):
 # Função para exibir tabela de preço das frutas
 def exibir_menu(tabela_precos):
     print("------- MENU DE HOJE -------")
-    for fruta, preco in tabela_precos.item():
+    for fruta, precos in tabela_precos.items():
         print(f"{fruta.capitalize()}: R$ {precos:.2f}")
     print("--------------------")
 
@@ -41,7 +41,7 @@ total_compra = 0
 # Lista vazia para adicionar os itens
 carrinho = []
 
-exibir_menu(tabela_precos)
+exibir_menu(precos)
 
 # Estrutura de repetição para a compra das frutas
 while len(carrinho) < 3:
